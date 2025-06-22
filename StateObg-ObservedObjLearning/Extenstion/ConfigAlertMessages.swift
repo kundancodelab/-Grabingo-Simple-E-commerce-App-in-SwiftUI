@@ -31,6 +31,8 @@ class ConfigAlertMessages {
     let invalidCredentials = "Invalid username or password."
     let userNotFound = "No user found with the provided details."
     let userAlreadyExists = "An account with this email already exists."
+    let signout = "Are you sure you want to sign out?"
+    let deleteAccout = "Are you sure you want to delete your account?"
 
     // Network
     let noInternetConnection = "No internet connection. Please check your network settings."

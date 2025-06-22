@@ -3,7 +3,7 @@
     //  StateObg-ObservedObjLearning
     //
     //  Created by User on 10/06/25.
-    //
+    
 
     import SwiftUI
 
@@ -44,5 +44,6 @@
     }
 
     #Preview {
-        ProductView() .environmentObject(DashboardVM())
+        ProductView()
+            .environmentObject(DashboardVM())
     }

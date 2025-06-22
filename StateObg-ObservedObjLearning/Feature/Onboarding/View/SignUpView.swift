@@ -12,6 +12,12 @@ struct SignUpView: View {
     @State private var email:String = ""
     @State private var password:String = ""
     @State private var confirmPassword:String = ""
+    @State private var isNavigateToHome: Bool = false
+    @State private var isLoading:Bool =  false
+    @State private var isNavigateToForgotPassView: Bool = false
+    @State private var isNavigateToLoginView: Bool = false
+    @EnvironmentObject var authViewModel: AuthViewModel
+    @EnvironmentObject var LoginSignUpVM: Login_SignUpVM
     
     var isValidPassword: Bool {
            confirmPassword == password
@@ -78,7 +84,14 @@ struct SignUpView: View {
                 
                 //MARK:  Register Button
                 Button {
-                    // call register api.
+                    LoginSignUpVM.signUpWithEmail(name: username, email: email, password: password) { success, error in
+                        if success {
+                            print("Account created for \(username)")
+                            isNavigateToHome.toggle()
+                        } else {
+                            print("Sign-up failed: \(error ?? "Unknown error")")
+                        }
+                    }
                 } label: {
                     Text("Register")
                         .font(.system(size: 20,weight: .semibold))
@@ -90,32 +103,31 @@ struct SignUpView: View {
                 .padding(.top, 24)
 
                 
-                // Socail logins
-                
-                VStack(alignment:.center, spacing: 16){
-                        //MARK: google login
-                        Button {
-                         
-                        } label: {
-                            Text("Continue with Google")
-                               
-                                .frame(height: 40)
-                            
-                        }.frame(maxWidth: .infinity)
-                        
-                        //MARK:  Apple Login
-                        Button {
-                            
-                        } label: {
-                            Text("Continue with Apple")
-                                .frame(height: 40)
-                            
-                        }.frame(maxWidth: .infinity)
-
+                HStack {
+                    Button("Forgot Password") {
+                        isNavigateToForgotPassView.toggle()
+                    }
                 }
+                
                 Spacer()
                 
             }
+           
+            .navigationDestination(isPresented: $isNavigateToHome) {
+                MainTabBarView()
+                    .navigationBarBackButtonHidden(true)
+                
+            }
+            .navigationDestination(isPresented: $isNavigateToForgotPassView) {
+                // we will implement forgot password view.
+            }
+            .navigationDestination(isPresented: $isNavigateToLoginView) {
+                LoginView()
+            }
+            if isLoading {
+                CustomLoader()
+            }
+                     
         }
     }
 }
