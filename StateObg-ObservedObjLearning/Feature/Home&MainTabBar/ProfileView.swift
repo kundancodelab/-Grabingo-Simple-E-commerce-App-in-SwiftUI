@@ -138,7 +138,7 @@ struct ProfileView: View {
                     isLoading = true
                     loaderMessage = "Deleting account..."
                     if let uid = viewModel.usersession?.uid {
-                        viewModel.deleteUserByUID(uid: uid) { success, error in
+                        viewModel.deleteUserAccount { success, error in
                             isLoading = false
                             if success {
                                 print("Account deleted")

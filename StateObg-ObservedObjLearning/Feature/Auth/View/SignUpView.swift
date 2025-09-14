@@ -84,14 +84,7 @@ struct SignUpView: View {
                 
                 //MARK:  Register Button
                 Button {
-                    LoginSignUpVM.signUpWithEmail(name: username, email: email, password: password) { success, error in
-                        if success {
-                            print("Account created for \(username)")
-                            isNavigateToHome.toggle()
-                        } else {
-                            print("Sign-up failed: \(error ?? "Unknown error")")
-                        }
-                    }
+                    LoginSignUpVM.signUpWithEmail(name: username, email: email, password: password)
                 } label: {
                     Text("Register")
                         .font(.system(size: 20,weight: .semibold))
@@ -113,7 +106,7 @@ struct SignUpView: View {
                 
             }
            
-            .navigationDestination(isPresented: $isNavigateToHome) {
+            .navigationDestination(isPresented: $LoginSignUpVM.didRegisterSuccess) {
                 MainTabBarView()
                     .navigationBarBackButtonHidden(true)
                 
@@ -121,10 +114,10 @@ struct SignUpView: View {
             .navigationDestination(isPresented: $isNavigateToForgotPassView) {
                 // we will implement forgot password view.
             }
-            .navigationDestination(isPresented: $isNavigateToLoginView) {
+            .navigationDestination(isPresented: $LoginSignUpVM.didLoginSuccess) {
                 LoginView()
             }
-            if isLoading {
+            if LoginSignUpVM.isLoading {
                 CustomLoader()
             }
                      
