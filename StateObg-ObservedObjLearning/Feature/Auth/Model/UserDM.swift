@@ -13,6 +13,7 @@ struct UserData: Identifiable {
     var id: String // UID
     var name: String
     var email: String
+    var UserType:String?
     var countryCode: String
     var photoURL: String
     var country: String

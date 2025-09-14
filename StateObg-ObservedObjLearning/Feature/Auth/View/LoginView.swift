@@ -13,13 +13,13 @@ struct LoginView: View {
     @State private var isSignUpTap: Bool = false
     @State private var isLoading:Bool = false
     @State private var isNavigateHome:Bool = false
-  //  @EnvironmentObject var authViewModel: AuthViewModel
+    //  @EnvironmentObject var authViewModel: AuthViewModel
     @EnvironmentObject var LoginSignUpVM: Login_SignUpVM
     @State private var isGoogleError : Bool = false
     @State private var isAppleError : Bool = false
     
     
-   
+    
     var body: some View {
         ZStack {
             Color.primaryTheme
@@ -37,7 +37,7 @@ struct LoginView: View {
                     .font(.system(size: 30,weight: .heavy))
                     .padding(.leading, 12)
                 
-              
+                
                 
                 // Enter email
                 InputView(placeholder: "Enter your email", text: $email)
@@ -55,21 +55,13 @@ struct LoginView: View {
                     .textInputAutocapitalization(.words)
                     .padding(.horizontal)
                 
-              
+                
                 //MARK:  Login Button
                 Button {
                     // call register api.
-                    isLoading = true
-                    LoginSignUpVM.signInWithEmail(email: email, password: password) { success, userData in
-                        isLoading = false
-                        if success {
-                            isNavigateHome = true
-                        }else {
-                            isError = true
-                            print(LoginSignUpVM.errorMessage)
-                        }
-                    }
-                                       
+                    
+                    LoginSignUpVM.signInWithEmail(email: email, password: password)
+                    
                 } label: {
                     Text("Login")
                         .font(.system(size: 20,weight: .semibold))
@@ -79,102 +71,105 @@ struct LoginView: View {
                 .buttonStyle(CapsuleStyleButton(bgColor: .black, textColor: .white, hasBorder: true))
                 .padding(.horizontal)
                 .padding(.top, 24)
+                .alert("Grabingo", isPresented: $LoginSignUpVM.isError) {
+                    Button("OK", role: .cancel) { }
+                } message: {
+                    if LoginSignUpVM.errorMessage.isEmpty {
+                        Text(" Registration failed or canceled please try again")
+                    }else {
+                        Text("\(LoginSignUpVM.errorMessage)")
+                    }
+                    
+                }
                 
-               // Sign up Button.
+                // Sign up Button.
                 HStack {
                     Spacer()
                     Button {
-                         isSignUpTap.toggle()
+                        isSignUpTap.toggle()
                     } label: {
                         Text("New here ? Pleease  Sign Up")
                             .fontWeight(.semibold)
                     }
-
+                    
                 }.padding(.top,4)
                     .padding(.trailing, 20)
                 // Socail logins
                 VStack(alignment:.center, spacing: 16){
-                        //MARK: google login
-                        Button {
-                            isLoading = true
-                            LoginSignUpVM.signInWithGoogle { success, error in
-                                isLoading = false
-                                if success {
-                                    isNavigateHome = true
-                                } else {
-                                    print("error")
-                                    isLoading = false
-                                    isGoogleError = true
-                                }
-                            }
-                        } label: {
-                            Text("Continue with Google")
-                                .frame(height: 40)
-                            
-                        }.frame(maxWidth: .infinity)
+                    //MARK: google login
+                    Button {
                         
-                        //MARK:  Apple Login
-                        Button {
-                            isLoading = true
-                            LoginSignUpVM.signInWithApple { success, error in
-                                isLoading = false
-                                if success {
-                                    isNavigateHome = true
-                                } else {
-                                    print("Apple login failed: \(LoginSignUpVM.errorMessage)")
-                                   
-                                    isAppleError = true
-                                   
-                                }
+                        LoginSignUpVM.signInWithGoogle()
+                        
+                    } label: {
+                        Text("Continue with Google")
+                            .frame(height: 40)
+                        
+                    }.frame(maxWidth: .infinity)
+                        .alert("Grabingo", isPresented: $LoginSignUpVM.isError) {
+                            Button("OK", role: .cancel) { }
+                        } message: {
+                            if LoginSignUpVM.errorMessage.isEmpty {
+                                Text(" sign - in google failed or canceled please try again")
+                            }else {
+                                Text("\(LoginSignUpVM.errorMessage)")
                             }
-                        } label: {
-                            Text("Continue with Apple")
-                                .frame(height: 40)
                             
-                        }.frame(maxWidth: .infinity)
-
+                        }
+                    
+                    //MARK:  Apple Login
+                    Button {
+                        
+                        LoginSignUpVM.signInWithApple()
+                    } label: {
+                        Text("Continue with Apple")
+                            .frame(height: 40)
+                        
+                    }.frame(maxWidth: .infinity)
+                        .alert("Grabingo", isPresented: $LoginSignUpVM.isError) {
+                            Button("OK", role: .cancel) { }
+                        } message: {
+                            if LoginSignUpVM.errorMessage.isEmpty {
+                                Text(" sign -in with Apple  failed or canceled please try again")
+                            }else {
+                                Text("\(LoginSignUpVM.errorMessage)")
+                            }
+                            
+                        }
+                    
                 }
                 Spacer()
                 
             }
             .navigationDestination(isPresented: $isSignUpTap) {
                 SignUpView()
-                  //  .environmentObject(authViewModel)
+                //  .environmentObject(authViewModel)
                     .environmentObject(LoginSignUpVM)
                 
             }
-            .navigationDestination(isPresented: $isNavigateHome) {
+            .navigationDestination(isPresented: $LoginSignUpVM.didLoginSuccess) {
                 MainTabBarView()
                     .navigationBarBackButtonHidden(true)
             }
-            .alert("Grabingo", isPresented: $isGoogleError) {
-                Button("OK", role: .cancel) { }
-            } message: {
-                if LoginSignUpVM.errorMessage.isEmpty {
-                    Text(" sign failed or canceled please try again")
-                }else {
-                    Text("\(LoginSignUpVM.errorMessage)")
-                }
-               
+            .navigationDestination(isPresented: $LoginSignUpVM.didRegisterSuccess) {
+                MainTabBarView()
+                    .navigationBarBackButtonHidden(true)
             }
-            .alert("Grabingo", isPresented: $isAppleError) {
-                Button("OK", role: .cancel) { }
-            } message: {
-                if LoginSignUpVM.errorMessage.isEmpty {
-                    Text(" sign failed or canceled please try again")
-                }else {
-                    Text("\(LoginSignUpVM.errorMessage)")
-                }
-               
+            .navigationDestination(isPresented: $LoginSignUpVM.didAppleLoginSuccess) {
+                MainTabBarView()
+                    .navigationBarBackButtonHidden(true)
             }
-
-            if isLoading {
+          
+          
+           
+            
+            if LoginSignUpVM.isLoading {
                 CustomLoader()
             }
         }
     }
+    
 }
-
 #Preview {
     LoginView()
 }

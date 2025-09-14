@@ -27,7 +27,7 @@ struct UpdateProfileView: View {
                         
                         
                         Button {
-                            
+                            /// trigger  photos. 
                         } label: {
                             if let photoURL = URL(string: LoginSignUpVM.currentUser?.photoURL ?? ""), ((LoginSignUpVM.currentUser?.photoURL.isEmpty) == nil) {
                                 AsyncImage(url: photoURL) { image in
@@ -88,23 +88,7 @@ struct UpdateProfileView: View {
                             "email": email
                         ]
 
-                        LoginSignUpVM.updateUserByUID(uid: LoginSignUpVM.currentUser?.id ?? "", updates: updatedData) { success, error in
-                            isloading = false
-                            if success {
-                                withAnimation {
-                                    showSuccessToast = true
-                                }
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                                    withAnimation {
-                                        showSuccessToast = false
-                                    }
-                                    dismiss()
-                                }
-                                
-                            } else {
-                                print(" Update failed:", error ?? "Unknown error")
-                            }
-                        }
+                        LoginSignUpVM.updateUserProfile(updates: updatedData)
                     } label: {
                         Text("Update Profile")
                             .frame(maxWidth: .infinity)
@@ -115,11 +99,11 @@ struct UpdateProfileView: View {
                 }
                 Spacer()
             }
-            if isloading {
+            if LoginSignUpVM.isLoading {
                 ProgressView()
                     .frame(width: 80, height: 80)
             }
-            if showSuccessToast {
+            if LoginSignUpVM.didUpdateUserProfileSuccess {
                 TopToastView(message: "Profile Updated Successfully")
             }
         }
