@@ -1,0 +1,10 @@
+//
+//  Grabingo(Production).xcconfig
+//  StateObg-ObservedObjLearning
+//
+//  Created by User on 17/09/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+ROOT_URL = www.grabingo.production.com

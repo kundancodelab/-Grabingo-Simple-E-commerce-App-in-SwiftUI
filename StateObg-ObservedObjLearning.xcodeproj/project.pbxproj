@@ -57,6 +57,19 @@
 		CECBF4932E761EED008BDF2D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBF4922E761EED008BDF2D /* AuthService.swift */; };
 		CECBF4962E761F12008BDF2D /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBF4952E761F12008BDF2D /* UserServiceProtocol.swift */; };
 		CECBF4992E761F72008BDF2D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBF4982E761F72008BDF2D /* Errors.swift */; };
+		CED865B12E7AD5D6000EC542 /* Grabingo(Development).xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CED865B02E7AD5D6000EC542 /* Grabingo(Development).xcconfig */; };
+		CED865B32E7AD623000EC542 /* Grabingo(Staging).xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CED865B22E7AD623000EC542 /* Grabingo(Staging).xcconfig */; };
+		CED865B52E7AD64C000EC542 /* Grabingo(Production).xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CED865B42E7AD64C000EC542 /* Grabingo(Production).xcconfig */; };
+		CED865BD2E7ADFC6000EC542 /* Hindi.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED865BB2E7ADFC6000EC542 /* Hindi.strings */; };
+		CED865C02E7ADFFD000EC542 /* German.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED865BE2E7ADFFD000EC542 /* German.strings */; };
+		CED865C32E7AE008000EC542 /* Spanish.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED865C12E7AE008000EC542 /* Spanish.strings */; };
+		CED865C62E7AE017000EC542 /* Dutch.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED865C42E7AE017000EC542 /* Dutch.strings */; };
+		CED865C92E7AE022000EC542 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED865C72E7AE022000EC542 /* English.strings */; };
+		CED865CC2E7AE231000EC542 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED865CB2E7AE231000EC542 /* ConfigurationManager.swift */; };
+		CED865CF2E7AE367000EC542 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED865CE2E7AE367000EC542 /* APIManager.swift */; };
+		CED865D12E7AE36F000EC542 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED865D02E7AE36F000EC542 /* APIServices.swift */; };
+		CED865D32E7AE378000EC542 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED865D22E7AE378000EC542 /* APIHelper.swift */; };
+		CED865D52E7AE4A3000EC542 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED865D42E7AE4A3000EC542 /* String+Extension.swift */; };
 		CEF36EA12DF7F2530002AA42 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CEF36EA02DF7F2530002AA42 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +114,19 @@
 		CECBF4922E761EED008BDF2D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CECBF4952E761F12008BDF2D /* UserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
 		CECBF4982E761F72008BDF2D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		CED865B02E7AD5D6000EC542 /* Grabingo(Development).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Grabingo(Development).xcconfig"; sourceTree = "<group>"; };
+		CED865B22E7AD623000EC542 /* Grabingo(Staging).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Grabingo(Staging).xcconfig"; sourceTree = "<group>"; };
+		CED865B42E7AD64C000EC542 /* Grabingo(Production).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Grabingo(Production).xcconfig"; sourceTree = "<group>"; };
+		CED865BC2E7ADFC6000EC542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Hindi.strings; sourceTree = "<group>"; };
+		CED865BF2E7ADFFD000EC542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/German.strings; sourceTree = "<group>"; };
+		CED865C22E7AE008000EC542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Spanish.strings; sourceTree = "<group>"; };
+		CED865C52E7AE017000EC542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dutch.strings; sourceTree = "<group>"; };
+		CED865C82E7AE022000EC542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
+		CED865CB2E7AE231000EC542 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		CED865CE2E7AE367000EC542 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CED865D02E7AE36F000EC542 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		CED865D22E7AE378000EC542 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		CED865D42E7AE4A3000EC542 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CEF36E7C2DF7E7FB0002AA42 /* StateObg-ObservedObjLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StateObg-ObservedObjLearning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +161,7 @@
 				CECBF4362E76180B008BDF2D /* Constant+API.swift */,
 				CECBF4372E76180B008BDF2D /* ImageView+Extension.swift */,
 				CECBF4382E76180B008BDF2D /* Utils.swift */,
+				CED865D42E7AE4A3000EC542 /* String+Extension.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -274,6 +301,9 @@
 		CECBF4642E76180B008BDF2D /* StateObg-ObservedObjLearning */ = {
 			isa = PBXGroup;
 			children = (
+				CED865CD2E7AE35A000EC542 /* Networking */,
+				CED865CA2E7AE220000EC542 /* ConfigurationManager */,
+				CED865B62E7ADD12000EC542 /* Localization */,
 				CECBF4392E76180B008BDF2D /* Extenstion */,
 				CECBF4582E76180B008BDF2D /* Feature */,
 				CECBF45A2E76180B008BDF2D /* Preview Content */,
@@ -325,6 +355,47 @@
 				CECBF4982E761F72008BDF2D /* Errors.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CED865AF2E7AD5BA000EC542 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CED865B02E7AD5D6000EC542 /* Grabingo(Development).xcconfig */,
+				CED865B22E7AD623000EC542 /* Grabingo(Staging).xcconfig */,
+				CED865B42E7AD64C000EC542 /* Grabingo(Production).xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CED865B62E7ADD12000EC542 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CED865BB2E7ADFC6000EC542 /* Hindi.strings */,
+				CED865BE2E7ADFFD000EC542 /* German.strings */,
+				CED865C12E7AE008000EC542 /* Spanish.strings */,
+				CED865C42E7AE017000EC542 /* Dutch.strings */,
+				CED865C72E7AE022000EC542 /* English.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		CED865CA2E7AE220000EC542 /* ConfigurationManager */ = {
+			isa = PBXGroup;
+			children = (
+				CED865AF2E7AD5BA000EC542 /* Configuration */,
+				CED865CB2E7AE231000EC542 /* ConfigurationManager.swift */,
+			);
+			path = ConfigurationManager;
+			sourceTree = "<group>";
+		};
+		CED865CD2E7AE35A000EC542 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CED865CE2E7AE367000EC542 /* APIManager.swift */,
+				CED865D02E7AE36F000EC542 /* APIServices.swift */,
+				CED865D22E7AE378000EC542 /* APIHelper.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		CEF36E732DF7E7FB0002AA42 = {
@@ -399,6 +470,11 @@
 			knownRegions = (
 				en,
 				Base,
+				hi,
+				fr,
+				nl,
+				de,
+				es,
 			);
 			mainGroup = CEF36E732DF7E7FB0002AA42;
 			minimizedProjectReferenceProxies = 1;
@@ -422,9 +498,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED865B32E7AD623000EC542 /* Grabingo(Staging).xcconfig in Resources */,
+				CED865C62E7AE017000EC542 /* Dutch.strings in Resources */,
 				CECBF4652E76180B008BDF2D /* Preview Assets.xcassets in Resources */,
+				CED865C92E7AE022000EC542 /* English.strings in Resources */,
+				CED865B12E7AD5D6000EC542 /* Grabingo(Development).xcconfig in Resources */,
 				CECBF4662E76180B008BDF2D /* Assets.xcassets in Resources */,
+				CED865C02E7ADFFD000EC542 /* German.strings in Resources */,
+				CED865C32E7AE008000EC542 /* Spanish.strings in Resources */,
 				CECBF4672E76180B008BDF2D /* Colors.xcassets in Resources */,
+				CED865B52E7AD64C000EC542 /* Grabingo(Production).xcconfig in Resources */,
+				CED865BD2E7ADFC6000EC542 /* Hindi.strings in Resources */,
 				CECBF4682E76180B008BDF2D /* GoogleService-Info.plist in Resources */,
 				CECBF46A2E76180B008BDF2D /* LaunchScreen.storyboard in Resources */,
 			);
@@ -447,6 +531,7 @@
 				CECBF4992E761F72008BDF2D /* Errors.swift in Sources */,
 				CECBF4712E76180B008BDF2D /* ProfileView.swift in Sources */,
 				CECBF4722E76180B008BDF2D /* UpdateProfileView.swift in Sources */,
+				CED865CC2E7AE231000EC542 /* ConfigurationManager.swift in Sources */,
 				CECBF4732E76180B008BDF2D /* User.swift in Sources */,
 				CECBF4742E76180B008BDF2D /* UserDM.swift in Sources */,
 				CECBF4752E76180B008BDF2D /* LoginView.swift in Sources */,
@@ -456,13 +541,17 @@
 				CECBF4772E76180B008BDF2D /* AuthViewModel.swift in Sources */,
 				CECBF4782E76180B008BDF2D /* Login_SignUpVM.swift in Sources */,
 				CECBF48D2E761E99008BDF2D /* GoogleAuthService.swift in Sources */,
+				CED865D32E7AE378000EC542 /* APIHelper.swift in Sources */,
 				CECBF48F2E761EAF008BDF2D /* AppleAuthService.swift in Sources */,
+				CED865D52E7AE4A3000EC542 /* String+Extension.swift in Sources */,
 				CECBF4792E76180B008BDF2D /* ProductDM.swift in Sources */,
 				CECBF47A2E76180B008BDF2D /* ProductDetailView.swift in Sources */,
 				CECBF47B2E76180B008BDF2D /* ProductView.swift in Sources */,
 				CECBF4912E761ED1008BDF2D /* EmailAuthService.swift in Sources */,
 				CECBF47C2E76180B008BDF2D /* ProductViewCell.swift in Sources */,
+				CED865D12E7AE36F000EC542 /* APIServices.swift in Sources */,
 				CECBF47D2E76180B008BDF2D /* DashboardVM.swift in Sources */,
+				CED865CF2E7AE367000EC542 /* APIManager.swift in Sources */,
 				CECBF47E2E76180B008BDF2D /* CapsuleStyleButton.swift in Sources */,
 				CECBF47F2E76180B008BDF2D /* CustomLoader.swift in Sources */,
 				CECBF4802E76180B008BDF2D /* InputView.swift in Sources */,
@@ -475,9 +564,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		CED865BB2E7ADFC6000EC542 /* Hindi.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED865BC2E7ADFC6000EC542 /* en */,
+			);
+			name = Hindi.strings;
+			sourceTree = "<group>";
+		};
+		CED865BE2E7ADFFD000EC542 /* German.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED865BF2E7ADFFD000EC542 /* en */,
+			);
+			name = German.strings;
+			sourceTree = "<group>";
+		};
+		CED865C12E7AE008000EC542 /* Spanish.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED865C22E7AE008000EC542 /* en */,
+			);
+			name = Spanish.strings;
+			sourceTree = "<group>";
+		};
+		CED865C42E7AE017000EC542 /* Dutch.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED865C52E7AE017000EC542 /* en */,
+			);
+			name = Dutch.strings;
+			sourceTree = "<group>";
+		};
+		CED865C72E7AE022000EC542 /* English.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED865C82E7AE022000EC542 /* en */,
+			);
+			name = English.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		CEF36E882DF7E7FD0002AA42 /* Debug */ = {
+		CED865A32E7AD536000EC542 /* Debug (Dev) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED865B02E7AD5D6000EC542 /* Grabingo(Development).xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -535,12 +668,267 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug (Dev)";
 		};
-		CEF36E892DF7E7FD0002AA42 /* Release */ = {
+		CED865A42E7AD536000EC542 /* Debug (Dev) */ = {
 			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "StateObg-ObservedObjLearning/StateObg-ObservedObjLearning.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StateObg-ObservedObjLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StateObg-ObservedObjLearning/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Grabingo-Prod";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.com.grabingo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug (Dev)";
+		};
+		CED865A52E7AD550000EC542 /* Debug (Staging) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED865B22E7AD623000EC542 /* Grabingo(Staging).xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Staging)";
+		};
+		CED865A62E7AD550000EC542 /* Debug (Staging) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "StateObg-ObservedObjLearning/StateObg-ObservedObjLearning.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StateObg-ObservedObjLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StateObg-ObservedObjLearning/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Grabingo-Prod";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.com.grabingo.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug (Staging)";
+		};
+		CED865A72E7AD55B000EC542 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED865B42E7AD64C000EC542 /* Grabingo(Production).xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Production)";
+		};
+		CED865A82E7AD55B000EC542 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "StateObg-ObservedObjLearning/StateObg-ObservedObjLearning.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StateObg-ObservedObjLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StateObg-ObservedObjLearning/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Grabingo-Prod";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.com.grabingo.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug (Production)";
+		};
+		CED865A92E7AD585000EC542 /* Release (Dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED865B02E7AD5D6000EC542 /* Grabingo(Development).xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -591,11 +979,12 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release (Dev)";
 		};
-		CEF36E8B2DF7E7FD0002AA42 /* Debug */ = {
+		CED865AA2E7AD585000EC542 /* Release (Dev) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -610,7 +999,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StateObg-ObservedObjLearning/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Grabingo;
+				INFOPLIST_KEY_CFBundleDisplayName = "Grabingo-Prod";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -634,9 +1023,67 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = "Release (Dev)";
 		};
-		CEF36E8C2DF7E7FD0002AA42 /* Release */ = {
+		CED865AB2E7AD598000EC542 /* Release (Staging) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED865B22E7AD623000EC542 /* Grabingo(Staging).xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Staging)";
+		};
+		CED865AC2E7AD598000EC542 /* Release (Staging) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -651,7 +1098,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StateObg-ObservedObjLearning/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Grabingo;
+				INFOPLIST_KEY_CFBundleDisplayName = "Grabingo-Prod";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -664,7 +1111,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.com.grabingo;
+				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.com.grabingo.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -675,7 +1122,106 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = "Release (Staging)";
+		};
+		CED865AD2E7AD5A5000EC542 /* Release (Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED865B42E7AD64C000EC542 /* Grabingo(Production).xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Production)";
+		};
+		CED865AE2E7AD5A5000EC542 /* Release (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "StateObg-ObservedObjLearning/StateObg-ObservedObjLearning.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StateObg-ObservedObjLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StateObg-ObservedObjLearning/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Grabingo-Prod";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.com.grabingo.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release (Production)";
 		};
 /* End XCBuildConfiguration section */
 
@@ -683,20 +1229,28 @@
 		CEF36E772DF7E7FB0002AA42 /* Build configuration list for PBXProject "StateObg-ObservedObjLearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEF36E882DF7E7FD0002AA42 /* Debug */,
-				CEF36E892DF7E7FD0002AA42 /* Release */,
+				CED865A72E7AD55B000EC542 /* Debug (Production) */,
+				CED865A52E7AD550000EC542 /* Debug (Staging) */,
+				CED865A32E7AD536000EC542 /* Debug (Dev) */,
+				CED865AD2E7AD5A5000EC542 /* Release (Production) */,
+				CED865A92E7AD585000EC542 /* Release (Dev) */,
+				CED865AB2E7AD598000EC542 /* Release (Staging) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug (Dev)";
 		};
 		CEF36E8A2DF7E7FD0002AA42 /* Build configuration list for PBXNativeTarget "StateObg-ObservedObjLearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEF36E8B2DF7E7FD0002AA42 /* Debug */,
-				CEF36E8C2DF7E7FD0002AA42 /* Release */,
+				CED865A82E7AD55B000EC542 /* Debug (Production) */,
+				CED865A62E7AD550000EC542 /* Debug (Staging) */,
+				CED865A42E7AD536000EC542 /* Debug (Dev) */,
+				CED865AE2E7AD5A5000EC542 /* Release (Production) */,
+				CED865AA2E7AD585000EC542 /* Release (Dev) */,
+				CED865AC2E7AD598000EC542 /* Release (Staging) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug (Dev)";
 		};
 /* End XCConfigurationList section */
 

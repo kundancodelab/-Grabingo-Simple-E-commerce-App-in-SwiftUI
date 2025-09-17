@@ -20,6 +20,15 @@ struct StateObg_ObservedObjLearningApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject private var authViewModel = AuthViewModel()
     @StateObject private var authVM = Login_SignUpVM()
+    // Add init to trigger configuration at the right time
+        init() {
+            // This ensures ConfigurationManager is accessed after app is fully launched
+            DispatchQueue.main.async {
+                // Pre-load the base URL safely
+                _ = APIManager.shared.BASE_URL
+            }
+        }
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
