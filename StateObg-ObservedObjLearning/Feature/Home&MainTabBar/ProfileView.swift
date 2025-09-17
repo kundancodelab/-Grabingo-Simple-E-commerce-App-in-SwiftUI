@@ -163,18 +163,13 @@ struct ProfileView: View {
                 CustomLoader()
             }
         }
+        .onAppear {
+            print("Base URL:\(APIManager.shared.BASE_URL)")
+        }
     }
 }
 
-// Extension to get initials from name
-extension String {
-    func initials() -> String {
-        components(separatedBy: " ")
-            .prefix(2)
-            .compactMap { $0.first?.uppercased() }
-            .joined()
-    }
-}
+
 
 
 
