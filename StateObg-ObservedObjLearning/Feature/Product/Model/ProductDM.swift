@@ -8,7 +8,8 @@
 import Foundation
 
 // MARK: - Product Model
-struct ProductDM: Codable, Identifiable {
+struct ProductDM: Codable, Identifiable , Hashable  {
+    
     let id: Int
     let title: String
     let price: Double
@@ -19,7 +20,7 @@ struct ProductDM: Codable, Identifiable {
 }
 
 // MARK: - Rating Model
-struct Rating: Codable {
+struct Rating: Codable,Hashable {
     let rate: Double
     let count: Int
 }

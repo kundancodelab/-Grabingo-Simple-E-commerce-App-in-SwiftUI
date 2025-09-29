@@ -20,9 +20,9 @@ final class AuthViewModel: ObservableObject {
     private let database = Database.database().reference()
     
     init() {
-        Task {
-            await loadCurrentUser()
-        }
+//        Task {
+//            await loadCurrentUser()
+//        }
     }
     
     func loadCurrentUser() async {

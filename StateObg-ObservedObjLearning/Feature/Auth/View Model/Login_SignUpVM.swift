@@ -11,7 +11,7 @@ final class Login_SignUpVM: ObservableObject {
     @Published var successMessage = ""
     @Published var isError: Bool = false
     @Published var usersession: FirebaseAuth.User?
-    @Published var currentUser: UserData?
+    @Published var currentUser: UserData? = nil
     @Published var isLoading: Bool = false
     @Published var didLoginSuccess: Bool = false
     @Published var didRegisterSuccess: Bool = false
@@ -41,6 +41,10 @@ final class Login_SignUpVM: ObservableObject {
         if let user = Auth.auth().currentUser {
             usersession = user
             fetchUserByUID(uid: user.uid)
+            
+        }else {
+            print("No valid user session found.")
+            currentUser = nil 
         }
     }
     
@@ -249,7 +253,7 @@ final class Login_SignUpVM: ObservableObject {
                 switch result {
                 case .success(let userData):
                     self?.currentUser = userData
-                    
+                    print("User found :\(userData)")
                 case .failure(let error):
                     self?.errorMessage = error.localizedDescription
                     print(self?.errorMessage ?? "")

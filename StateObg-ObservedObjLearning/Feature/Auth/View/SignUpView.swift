@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @EnvironmentObject var router :Router
     @State private var username:String = ""
     @State private var email:String = ""
     @State private var password:String = ""
@@ -106,17 +107,25 @@ struct SignUpView: View {
                 
             }
            
-            .navigationDestination(isPresented: $LoginSignUpVM.didRegisterSuccess) {
-                MainTabBarView()
-                    .navigationBarBackButtonHidden(true)
-                
-            }
-            .navigationDestination(isPresented: $isNavigateToForgotPassView) {
-                // we will implement forgot password view.
-            }
-            .navigationDestination(isPresented: $LoginSignUpVM.didLoginSuccess) {
-                LoginView()
-            }
+//            .navigationDestination(isPresented: $LoginSignUpVM.didRegisterSuccess) {
+//                MainTabBarView()
+//                    .navigationBarBackButtonHidden(true)
+//                
+//            }
+//            .navigationDestination(isPresented: $isNavigateToForgotPassView) {
+//                // we will implement forgot password view.
+//            }
+//            .navigationDestination(isPresented: $LoginSignUpVM.didLoginSuccess) {
+//                LoginView()
+//            }
+            
+//            onChange(of: LoginSignUpVM.didRegisterSuccess) { oldValue, newValue in
+//                if newValue {
+//                    router.navigate(to: .home(.home))
+//                }
+//            }
+         
+           
             if LoginSignUpVM.isLoading {
                 CustomLoader()
             }

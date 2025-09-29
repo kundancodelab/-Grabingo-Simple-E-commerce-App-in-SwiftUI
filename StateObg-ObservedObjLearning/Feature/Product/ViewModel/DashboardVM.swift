@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class DashboardVM: ObservableObject {
+class DashboardVM: ObservableObject  {
     @Published var title: String = "Fashion Products"
     @Published var productData: [ProductDM] = []
     @Published var cartItems: [ProductDM] = []

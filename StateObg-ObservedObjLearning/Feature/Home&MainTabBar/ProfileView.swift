@@ -3,6 +3,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject var viewModel: Login_SignUpVM
+    @EnvironmentObject var router: Router
     @State private var isLoading = false
     @State private var loaderMessage = "Signing out..."
     @State private var isNavigateToCardsDetails = false
@@ -124,6 +125,8 @@ struct ProfileView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                         viewModel.signOut()
                         isLoading = false
+                        router.setRoot(.login)
+                        
                     }
                 }
                 Button("Cancel", role: .cancel) {
@@ -142,6 +145,7 @@ struct ProfileView: View {
                             isLoading = false
                             if success {
                                 print("Account deleted")
+                                router.setRoot(.login)
                             } else {
                                 print("Delete failed: \(error ?? "Unknown error")")
                             }

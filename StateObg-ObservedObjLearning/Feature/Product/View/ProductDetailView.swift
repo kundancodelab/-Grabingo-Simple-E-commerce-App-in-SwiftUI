@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ProductDetailView: View {
-    let product: ProductDM
+    let product: ProductDM?
     @EnvironmentObject var dashboardVM: DashboardVM
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 
-                AsyncImage(url: URL(string: product.image)) { phase in
+                AsyncImage(url: URL(string: product?.image ?? "")) { phase in
                     switch phase {
                     case .empty:
                         ProgressView()
@@ -34,38 +34,41 @@ struct ProductDetailView: View {
                 }
                 .frame(height: 250)
 
-                Text(product.title)
+                Text(product?.title ?? "NA")
                     .font(.title2)
                     .fontWeight(.bold)
 
-                Text(product.description)
+                Text(product?.description ?? "NA" )
                     .font(.body)
 
-                Text("Category: \(product.category)")
+                Text("Category: \(product?.category)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
 
-                Text("Price: ₹\(product.price, specifier: "%.2f")")
+                Text("Price: ₹\(product?.price ?? 0.0 , specifier: "%.2f")")
                     .font(.title3)
                     .foregroundColor(.green)
 
-                Text("Rating: \(product.rating.rate) ⭐️ (\(product.rating.count) reviews)")
+                Text("Rating: \(product?.rating.rate ?? 0.0) ⭐️ (\(product?.rating.count) reviews)")
                     .font(.subheadline)
                     .foregroundColor(.orange)
 
                 HStack(spacing: 12) {
                     Button("🛒 Add to Cart") {
+                        guard let product = product else {return}
                         dashboardVM.addToCart(product)
                     }
                     .buttonStyle(.borderedProminent)
 
                     Button("❤️ Wishlist") {
+                        guard let product = product else {return}
                         dashboardVM.addToWishlist(product)
                     }
                     .buttonStyle(.bordered)
                 }
 
                 Button("💸 Buy Now") {
+                    guard let product = product else {return}
                     dashboardVM.buyNow(product)
                 }
                 .buttonStyle(.borderedProminent)
@@ -74,7 +77,7 @@ struct ProductDetailView: View {
             }
             .padding()
         }
-        .navigationTitle(product.title)
+        .navigationTitle(product?.title ?? "NA")
         .overlay(
             Group {
                 if let message = dashboardVM.toastMessage {

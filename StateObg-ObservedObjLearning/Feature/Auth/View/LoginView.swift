@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var router: Router
     @State private var email:String = ""
     @State private var password:String = ""
     @State private var isSignUpTap: Bool = false
@@ -15,6 +16,7 @@ struct LoginView: View {
     @State private var isNavigateHome:Bool = false
     //  @EnvironmentObject var authViewModel: AuthViewModel
     @EnvironmentObject var LoginSignUpVM: Login_SignUpVM
+   
     @State private var isGoogleError : Bool = false
     @State private var isAppleError : Bool = false
     
@@ -86,7 +88,7 @@ struct LoginView: View {
                 HStack {
                     Spacer()
                     Button {
-                        isSignUpTap.toggle()
+                        router.navigate(to: .auth(.signup))
                     } label: {
                         Text("New here ? Pleease  Sign Up")
                             .fontWeight(.semibold)
@@ -141,27 +143,42 @@ struct LoginView: View {
                 Spacer()
                 
             }
-            .navigationDestination(isPresented: $isSignUpTap) {
-                SignUpView()
-                //  .environmentObject(authViewModel)
-                    .environmentObject(LoginSignUpVM)
-                
-            }
-            .navigationDestination(isPresented: $LoginSignUpVM.didLoginSuccess) {
-                MainTabBarView()
-                    .navigationBarBackButtonHidden(true)
-            }
-            .navigationDestination(isPresented: $LoginSignUpVM.didRegisterSuccess) {
-                MainTabBarView()
-                    .navigationBarBackButtonHidden(true)
-            }
-            .navigationDestination(isPresented: $LoginSignUpVM.didAppleLoginSuccess) {
-                MainTabBarView()
-                    .navigationBarBackButtonHidden(true)
-            }
+//            .navigationDestination(isPresented: $isSignUpTap) {
+//                SignUpView()
+//                //  .environmentObject(authViewModel)
+//                    .environmentObject(LoginSignUpVM)
+//                
+//            }
+//            .navigationDestination(isPresented: $LoginSignUpVM.didLoginSuccess) {
+//                MainTabBarView()
+//                    .navigationBarBackButtonHidden(true)
+//            }
+//            .navigationDestination(isPresented: $LoginSignUpVM.didRegisterSuccess) {
+//                MainTabBarView()
+//                    .navigationBarBackButtonHidden(true)
+//            }
+//            .navigationDestination(isPresented: $LoginSignUpVM.didAppleLoginSuccess) {
+//                MainTabBarView()
+//                    .navigationBarBackButtonHidden(true)
+//            }
           
-          
-           
+//            onChange(of: LoginSignUpVM.didLoginSuccess) { oldValue, newValue in
+//                if newValue {
+//                    router.setRoot(.dashboard)
+//                    
+//                }
+//            }
+//            onChange(of: LoginSignUpVM.didGoogleLoginSuccess) { oldValue, newValue in
+//                if newValue {
+//                    router.setRoot(.dashboard)
+//                }
+//            }
+//            onChange(of: LoginSignUpVM.didRegisterSuccess) { oldValue, newValue in
+//                if newValue {
+//                    router.setRoot(.dashboard)
+//                }
+//            }
+//           
             
             if LoginSignUpVM.isLoading {
                 CustomLoader()

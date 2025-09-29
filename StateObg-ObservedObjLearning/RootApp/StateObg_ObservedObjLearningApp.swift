@@ -20,31 +20,32 @@ struct StateObg_ObservedObjLearningApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject private var authViewModel = AuthViewModel()
     @StateObject private var authVM = Login_SignUpVM()
-    // Add init to trigger configuration at the right time
-        init() {
-            // This ensures ConfigurationManager is accessed after app is fully launched
-            DispatchQueue.main.async {
-                // Pre-load the base URL safely
-                _ = APIManager.shared.BASE_URL
-            }
-        }
-    
+    @ObservedObject  var router  = Router()
+   
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
+            NavigationStack(path: $router.navPath) {
                 Group {
-                    if authVM.usersession == nil {
+                    if authVM.currentUser == nil {
                         LoginView()
-                        
-                        
                     }else {
                         MainTabBarView()
                     }
                 }
-                
-            }.environmentObject(authVM)
-        
-         
+                .navigationDestination(for: AppRoute.self) { route in
+                    switch route {
+                    case .auth(let authRoute):
+                        AuthRouterView(authRoute: authRoute)
+                            .environmentObject(router)
+                    case .home(let homeRoute):
+                        HomeRouterView(homeRoute: homeRoute)
+                            .environmentObject(router)
+                    }
+                }
+            }
+            .environmentObject(authVM)
+            .environmentObject(router)
+            .environmentObject(authViewModel)
         }
     }
 }
